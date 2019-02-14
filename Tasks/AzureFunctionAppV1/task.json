@@ -3,6 +3,7 @@
     "name": "AzureFunctionApp",
     "friendlyName": "Azure Function",
     "description": "Update Azure Function on Windows, Function on Linux with built-in images, ASP.NET, .NET Core, PHP, Python or Node.js based Web applications",
+    "helpUrl": "https://aka.ms/azurefunctiondeployreadme",
     "helpMarkDown": "[More information](https://aka.ms/azurefunctiondeployreadme)",
     "category": "Deploy",
     "visibility": [
@@ -18,7 +19,7 @@
     "version": {
         "Major": 1,
         "Minor": 0,
-        "Patch": 1
+        "Patch": 2
     },
     "minimumAgentVersion": "2.104.1",
     "groups": [
