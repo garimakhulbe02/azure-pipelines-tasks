@@ -20,9 +20,9 @@ extent required to debug changes to any libraries licensed under the GNU Lesser
 General Public License.
 
 
-1.	argparse (https://github.com/nodeca/argparse)
-2.	@types/node (https://www.github.com/DefinitelyTyped/DefinitelyTyped.git)
-3.	@types/q (https://www.github.com/DefinitelyTyped/DefinitelyTyped.git)
+1.  argparse (https://github.com/nodeca/argparse)
+2.  @types/node (https://www.github.com/DefinitelyTyped/DefinitelyTyped.git)
+3.  @types/q (https://www.github.com/DefinitelyTyped/DefinitelyTyped.git)
 4.  azure-pipelines-task-lib (https://github.com/Microsoft/azure-pipelines-task-lib.git)
 5.  azure-pipelines-tool-lib (https://github.com/Microsoft/azure-pipelines-tool-lib.git)
 6.  balanced-match  (https://github.com/juliangruber/balanced-match)
@@ -30,20 +30,20 @@ General Public License.
 8.  concat-map  (https://github.com/substack/node-concat-map)
 9.  esprima (https://github.com/ariya/esprima)
 10.  js-yaml (https://github.com/nodeca/js-yaml)
-11. minimatch (https://github.com/isaacs/minimatch)
-12. Mockery (https://github.com/mfncooper/mockery)
-13. node-uuid  (https://github.com/broofa/node-uuid)
-14. q (https://github.com/kriskowal/q)
-15. semver (https://github.com/npm/node-semver/)
-16. semver-compare (https://github.com/substack/semver-compare)
-17. ShellJS (https://github.com/shelljs/shelljs)
-    Includes:wrench-js
-18. sprintf-js (https://github.com/alexei/sprintf.js)
-19. tunnel (https://github.com/koichik/node-tunnel)
-20. typed-rest-client  (https://github.com/Microsoft/typed-rest-client)
-21. underscore (https://github.com/jashkenas/underscore)
-22. uuid (git+https://github.com/kelektiv/node-uuid.git)
-23. vso-node-api (https://github.com/Microsoft/vsts-node-api)
+11.  minimatch (https://github.com/isaacs/minimatch)
+12.  Mockery (https://github.com/mfncooper/mockery)
+13.  node-uuid  (https://github.com/broofa/node-uuid)
+14.  q (https://github.com/kriskowal/q)
+15.  semver (https://github.com/npm/node-semver/)
+16.  semver-compare (https://github.com/substack/semver-compare)
+17.  ShellJS (https://github.com/shelljs/shelljs)
+     Includes:wrench-js
+18.  sprintf-js (https://github.com/alexei/sprintf.js)
+19.  tunnel (https://github.com/koichik/node-tunnel)
+20.  typed-rest-client  (https://github.com/Microsoft/typed-rest-client)
+21.  underscore (https://github.com/jashkenas/underscore)
+22.  uuid (git+https://github.com/kelektiv/node-uuid.git)
+23.  vso-node-api (https://github.com/Microsoft/vsts-node-api)
 
 
 %% @types/node NOTICES, INFORMATION, AND LICENSE BEGIN HERE
