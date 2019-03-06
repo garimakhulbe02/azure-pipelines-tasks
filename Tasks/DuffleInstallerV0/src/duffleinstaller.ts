@@ -8,6 +8,7 @@ import * as os from 'os';
 import * as util from 'util';
 import { WebRequest, sendRequest } from 'utility-common/restutilities';
 import { download } from 'utility-common/downloadutility';
+import * as commonutility from require('utility-common/commonutility');
 
 const DuffleToolName = 'duffle';
 const DuffleLatestReleaseUrl = 'https://api.github.com/repos/deislabs/Duffle/releases/latest';
@@ -35,10 +36,10 @@ async function downloadDuffle(version: string): Promise<string> {
             throw new Error(tl.loc('DownloadDuffleFailed', getDuffleDownloadURL(version), exception));
         }
 
-        cachedToolPath = await toolLib.cacheFile(duffleDownloadPath, DuffleToolName + getExecutableExtension(), DuffleToolName, version);
+        cachedToolPath = await toolLib.cacheFile(duffleDownloadPath, DuffleToolName + commonutility.getExecutableExtension(), DuffleToolName, version);
     }
 
-    const dufflePath = path.join(cachedToolPath, DuffleToolName + getExecutableExtension());
+    const dufflePath = path.join(cachedToolPath, DuffleToolName + commonutility.getExecutableExtension());
     fs.chmod(dufflePath, '777');
     return dufflePath;
 }
@@ -74,22 +75,10 @@ async function getStableDuffleVersion(): Promise<string> {
 }
 
 function getDuffleInstallPath(): string {
-    const configDir = path.join(getTempDirectory(), 'Duffle' + Date.now());
+    const configDir = path.join(commonutility.getTempDirectory(), 'Duffle' + Date.now());
     if (!fs.existsSync(configDir)) {
         fs.mkdirSync(configDir);
     }
 
-    return path.join(configDir, DuffleToolName + getExecutableExtension());
-}
-
-function getTempDirectory(): string {
-    return tl.getVariable('agent.tempDirectory') || os.tmpdir();
-}
-
-function getExecutableExtension(): string {
-    if (os.type().match(/^Win/)) {
-        return '.exe';
-    }
-
-    return '';
+    return path.join(configDir, DuffleToolName + commonutility.getExecutableExtension());
 }
